@@ -1,0 +1,231 @@
+      
+        .upper-bar{
+            width: 100%;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            background-color: white;
+        }
+        .outer-box{
+           
+            width: 50%;
+            height: 50%;
+            -ms-transform: translateX(50%);
+            -ms-transform: translateY(50%);
+            transform:translate(50%,30%);
+            padding: 10px;
+            background-color: white;
+            box-shadow: 10px 10px 8px #888888;
+            position:relative;
+            border-radius: 10px;
+        }
+       
+        .Page-Title{
+            font-family: Garamond;
+            text-align: center;
+                       
+        }
+        .blue-button{
+            background-color:rgb(0, 38, 255);
+            border-radius: 1mm;
+            color: white;
+            width: 100px;
+            height: 45px;
+            border: 0ch;   
+            position: relative;     
+            left: 67.5%; 
+            padding: 5px;
+            font-size: large;
+        }
+        
+       
+        
+       /* .heading{
+            border: 1px solid black ; 
+            border-radius: 5px; 
+        }
+        */
+
+        table, td, th {
+            border: 2px solid rgba(82, 82, 82, 0.493);
+          }
+          
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 5px;
+            
+          }
+          
+          .table-heading{
+              padding: 5px;
+              border-radius: 5px;
+              font-size: large;
+              font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+       .button-pannle{
+           padding: 10px;
+       }
+       .blue-button-single{
+        background-color:rgb(0, 38, 255);
+        border-radius: 1mm;
+        color: white;
+        width: 150px;
+        height: 45px;
+        border: 0ch;   
+        position: relative;     
+        left: 84%; 
+        padding: 5px;
+        font-size: large;
+    }
+    
+    .blue-button-center{
+        background-color:rgb(0, 38, 255);
+        border-radius: 1mm;
+        color: white;
+        width: 150px;
+        height: 40px;
+        border: 0ch;   
+        position: relative;     
+        left: 45%; 
+        padding: 5px;
+        font-size: large;
+    }
+    .product-details{
+        font-size: large;
+        font-weight: bold;
+        padding: 10px;
+    }
+    tr{
+        height: 40px;
+    }
+    
+    .input-value{
+        height: 25px;
+        
+        width: 95%;
+    }
+
+    .icon{
+        width: 25px;
+        height:25px;
+        position: relative;     
+        left: 0%; 
+        padding: 5px;
+        font-size: large;
+    }
+    .col-sm-3{
+        
+        position: relative;     
+        left: 76%; 
+        font-size: large;
+    }
+    .product-grand-total{
+        height: 20px;
+        width: 10%;
+        position: relative;     
+        font-size: large;
+    }
+
+    #saveOrder{
+        background-color:rgb(0, 38, 255);
+        border-radius: 1mm;
+        color: white;
+        width: 70px;
+        height: 27px;
+        border: 0ch;   
+        position: relative;     
+        left: 16%;
+        padding: 5px;
+        font-size:medium;
+
+    }
+    .order_item_outer-box{
+        width: 99%;
+        height: 50%;
+       
+       padding: 5px;
+       
+        position: relative;
+        
+    }
+    
+    .order-details{
+
+        padding: 15px;
+    }
+    #table-entry
+    {
+
+        width: 90%;
+        border: 0px;
+    }
+    .order-details-box
+    {
+        
+        display: none;
+
+    }
+
+    .add-more-button{
+        background-color:rgb(0, 38, 255);
+        border-radius: 1mm;
+        color: white;
+        border: 0ch;   
+        position: relative;     
+        padding: 5px;
+        height: 90%;
+        width: 20%;
+        left: 80%;
+       
+    }
+
+    .remove-button{
+        background-color:rgb(255, 0, 0);
+        border-radius: 1mm;
+        color: white;
+        border: 0ch;   
+        position: relative;     
+        padding: 5px;
+        height: 90%;
+        width: 60%;
+        left: 17%;
+    }
+
+   .button-in-table{
+        background-color:rgb(0, 38, 255);
+        border-radius: 1mm;
+        color: white;
+        width: 100px;
+        height: 25px;
+        border: 0ch;   
+         
+        position: relative;
+        left: 25%;
+        padding: 5px;
+      
+
+    }
+
+    .mobile-no-input{
+       
+        width: 25%;
+        position: relative;
+        left: 76%;     
+        font-size: large;
+    }
+
+    .delete-product{
+        background-color: red;
+        color: white;
+        width: 60%;
+        align-items: center;
+    }
+
+    .background
+    {
+        background: rgba(0,0,0,0.7) url(../images/bg.jpg);
+         background-size: cover;
+        background-blend-mode: darken;
+        height: 100vh; 
+    }

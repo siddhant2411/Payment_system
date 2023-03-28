@@ -1,0 +1,50 @@
+.background{
+    
+    background: rgba(0,0,0,0.7) url(../images/table-bg.png);
+    background-size: cover;
+    
+    min-height: 100vh;
+
+} 
+
+/* table */
+
+table{
+    
+    border-collapse: collapse;
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+table tr td{
+    padding: 10px 35px;
+}
+.header{
+    background-color: rgb(13, 13, 95);
+    font-size: 20px;
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+}
+.table-content{
+    font-size: 15px;
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+}
+.btn-add{
+    padding: 5px 23px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    margin: 10px auto;
+    
+}
+
+
+.table-content:nth-child(even)
+{background-color: #344981;}
+
+.table-content:nth-child(odd)
+{background-color: #5d75b4;}

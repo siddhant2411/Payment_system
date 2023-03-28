@@ -1,0 +1,73 @@
+.icon{
+    height: 28px;
+    margin: 5px;
+    display: inline-block;
+    
+}
+.background{
+    background: rgba(0,0,0,0.7) url(../images/bg.jpg);
+    background-size: cover;
+}
+.outer-box{
+    background: rgba(0,0,0,0.7) url(../images/main-bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+    
+}
+.Page-Title{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: white;
+}
+.product-details{
+    display: flex;
+    min-width: 500px;
+}
+
+tbody tr td{
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    text-align: right;
+    font-size: 25px;
+    padding: 5px;
+    
+}
+tbody tr td input{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+}
+.unit-option{
+    height: 28px;
+    width: 60px;
+    font-size: 19px;
+    border-radius: 4px;
+}
+#start-scanner{
+    font-size: 24px;
+    background-color:white;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn{
+    height: 38px;
+    width: 134px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid white;
+    font-weight: bolder;
+    align-items: center;
+    margin-left: 36%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+

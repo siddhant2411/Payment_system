@@ -1,0 +1,115 @@
+
+.background{
+    
+    background: rgba(0,0,0,0.7) url(../images/table-bg.png);
+    background-size: cover;
+    min-height: 94.5vh;
+}
+
+.icon{
+    height: 28px;
+    
+    display: inline-block;
+    position: absolute;
+    
+}
+
+.Page-Title{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: rgb(24, 18, 71);
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+    text-shadow: 2px 2px white;
+}
+
+
+.btn-add{
+    
+    padding:9px 23px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(36, 50, 207);
+    color: white;
+    
+    font-weight: bolder;
+    
+    /* display: inline-block; */
+ }
+.btn-add-delete{
+    
+    padding:9px 23px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(250, 10, 10);
+    color: white;
+    
+    font-weight: bolder;
+    
+    /* display: inline-block; */
+ }
+.button-pannle a button{
+    padding:9px 23px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(36, 50, 207);
+    color: white;
+    font-weight: bolder;
+}
+.button-pannle{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+table{
+    
+    margin: 10px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th{
+    
+    padding: 10px;
+    font-size: 25px;
+    text-align: inherit;
+    }
+.title{
+    width: 138px;
+}
+.header{
+    background-color: rgb(13, 13, 95);
+}
+.desc{
+    width: 438px;
+}
+td{
+   
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.table-content:nth-child(even)
+{background-color: #344981;}
+
+.table-content:nth-child(odd)
+{background-color: #5d75b4;}
+
+.btn-remove{
+    padding: 5px 23px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+   
+    
+}

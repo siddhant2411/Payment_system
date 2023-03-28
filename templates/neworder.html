@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Order</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/neworder.css') }}"> -->
+    <link rel="stylesheet" href="../static/styles/neworder.css">
+</head>
+<body class="background">
+    <script type="text/javascript" src="{{ url_for('static',filename='javascript/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='javascript/showhide.js') }}"></script>
+    <div class="upper-bar">
+        <div>
+            <a href="home" ><img src="{{ url_for('static',filename='images/home.png') }}" class="icon" alt="Home"></a>
+        </div>
+    </div>
+    <div class="outer-box">
+        <div class="heading">
+            <h1 class="Page-Title">New Order</h1>
+        </div>
+        <hr width="100%">
+       
+            
+            <div class="table-heading">
+                <form method="get" action="Add">
+                    <table class="new-order-table" id="new-order-id" name="new-order-table">
+                            <thead>
+                                <tr height=40px class="header">
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Unit</th>
+                                        <th>Total</th>   
+                                  
+                                </tr>
+                        </thead>
+                       
+                        <tbody class="table-content">
+                           
+                            <div class="order_item_outer-box" >
+                               
+                                    <div class="mobile-no-input">
+                                       <input class="input-value input-mob" name="mobile_no" id="mobile-no" placeholder="Mobile No:" onsubmit="required()">
+                                    </div>
+                                    <br>
+                                    <div class="box-info full" id="taskFormContainer">
+                                        
+                                         <div class="row">
+                                            <div class="order-details-box">
+                                                        
+                                                    
+                                            </div>
+                                         </div>
+                                    </div>
+                                
+                                    
+                            </div>
+                        
+                        </tbody>
+                    </table>
+                    <select name="payment_type" class="unit-option">
+                        <Option value=2>UPI</option>
+                        <Option value=1>Cash<Option>
+                     </select>
+                </form>
+                <div class="button">
+                    <button class="add-more-button btn-add" id="add-more-items-order">Add More</button>
+                    </div>
+               
+                
+            </div>          
+                          
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="box-info full p-3 mb-3 mt-0">
+                        <div class="col-sm-9 text-right">
+                            <span><b></b></span>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <form>
+                             <label for="product_grand_total">Total : </label>   
+                            <input id="product_grand_total" name="product_grand_total" class="product-grand-total" value="0.0"> Rs</b>
+                            
+                             </form>
+                             <div class="button">
+                            <button class="btn btn-sm btn-primary pull-right btn-add" type="button" id="saveOrder"><a href="QRCode">Save</a></button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                        
+        </div> 
+   
+        <script type="text/javascript" src="{{ url_for('static',filename='javascript/showhide.js') }}"></script>
+        
+</body>
+</html>

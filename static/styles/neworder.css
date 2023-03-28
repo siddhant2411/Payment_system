@@ -1,0 +1,143 @@
+
+.background{
+    
+    background: rgba(0,0,0,0.7) url(../images/neworder-bg.jpg);
+    background-size: cover;
+    min-height: 88vh;
+    /* opacity: ; */
+}
+
+.icon{
+    height: 28px;
+    
+    display: inline-block;
+    position: absolute;
+    
+}
+
+input{
+    margin-top: 10px;
+    
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+#new-order-name
+{
+    width: 300px;
+}
+.input-mob{
+    margin-left: 11%;
+    width: 300px;
+    height: 33px;
+    border-radius: 10px;
+}
+.outer-box{
+    background: rgba(0,0,0,0.7) url(../images/neworder.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    box-shadow: 5px 10px #4890dc;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+    
+}
+form label{
+    margin-left: 74%;
+}
+
+.Page-Title{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: rgb(24, 18, 71);
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+    text-shadow: 2px 2px white;
+}
+
+/* table{
+    
+    border-collapse: collapse;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+table tr td{
+    padding: 10px 10px;
+}
+table tr th{
+    padding: 10px 53px;
+}
+.header{
+    background-color: rgb(13, 13, 95);
+    font-size: 20px;
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+}
+.table-content{
+    font-size: 15px;
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+} */
+.button{
+    padding-left: 78%;
+    
+}
+.btn-add{
+    margin-top: 10px;
+    padding:9px 23px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(36, 50, 207);
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.unit-option{
+    margin-left: 114px;
+    margin-top: 10px;
+    height: 28px;
+    width: 60px;
+    font-size: 19px;
+    border-radius: 4px;
+}
+
+
+table{
+    
+    margin: 10px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th{
+    
+    padding: 10px;
+    font-size: 25px;
+    text-align: inherit;
+    }
+.title{
+    width: 138px;
+}
+.header{
+    background-color: rgb(13, 13, 95);
+}
+.desc{
+    width: 438px;
+}
+td{
+   
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+
+.table-content:nth-child(even)
+{background-color: #344981;}
+
+.table-content:nth-child(odd)
+{background-color: #5d75b4;}

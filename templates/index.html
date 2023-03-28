@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <!-- <link rel="stylesheet" type="text/css" href="CSS/custom.css"> -->
+        <!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/display-orders.css') }}"> -->
+        <link rel="stylesheet" href="../static/styles/display-orders.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body class="background">
+        <script type="text/javascript" src="{{ url_for('static',filename='javascript/jquery.js') }}"></script>
+       <div class="upper-bar">
+            <div>
+                <a href="home" ><img src="{{ url_for('static',filename='images/home.png') }}" class="icon" alt="Home"></a>
+            </div>
+        </div>
+        <div class="outer-box">
+            <div class="heading">
+                <h1 class="Page-Title">Store Management System</h1>
+            </div>
+            <hr width="100%">
+           
+                
+                <div class="button-pannle">
+                    <a href="neworder"><button  class="blue-button">New Order</button></a>
+                    <a href="manage_products"><button  class="blue-button">Products</button></a>
+                    <a href="display_products"><button  class="blue-button">Display</button></a>
+                </div>
+
+                <div class="table-heading">
+                    <form class="form-horizontal" action=""> 
+                        <table>
+                                <thead>
+                                    <tr height=40px class="header">
+                                            <th>Order Number</th>
+                                            <th>Date</th>
+                                            <th>Mobile Number</th>
+                                            <th>Total Cost</th>
+                                            <th>Payment Type</th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </form>
+                    
+                </div>
+
+        </div>
+        <!--<script type="text/javascript" src="js/orderDetails.js"></script>-->
+          
+    </body>
+</html>

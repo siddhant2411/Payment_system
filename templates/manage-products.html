@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/custom.css"> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/display-orders.css') }}"> -->
+    <link rel="stylesheet" href="../static/styles/display-orders.css">
+
+    <!---- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>-->
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/custom.css') }}"> -->
+</head>
+
+<body class="background">
+
+    <script type="text/javascript" src="{{ url_for('static',filename='javascript/jquery.js') }}"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <div class="upper-bar">
+        <div>
+            <a href="home"><img src="{{ url_for('static',filename='images/home.png') }}" class="icon" alt="Home"></a>
+        </div>
+    </div>
+    <div class="outer-box">
+        <div class="heading">
+            <h1 class="Page-Title">Manage Products</h1>
+        </div>
+        <hr width="100%">
+        <div class="button-pannle">
+            <a href="add_product"><button class="blue-button-single">Add Product</button></a>
+
+        </div>
+
+        <div class="table-heading">
+
+            <table class="new-product-table" id="new-product-id">
+                <thead>
+                    <tr class="header" height=40px >
+                        <th>ProductId</th>
+                        <th width="200px">Prodecut Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Unit</th>
+                        <th>Action</th>
+
+                    </tr>
+                </thead>
+                <!-- </div> -->
+                <tbody class="table-content">
+                    <div class="order_item_outer-box">
+                        <form method="get" action="Add">
+                            <div class="box-info full" id="taskFormContainer">
+
+                                <div class="row">
+                                    <div class="order-details-box">
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </tbody>
+            </table>
+
+            <br>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static',filename='javascript/productDetails.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Add Product</title>
+
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="stylesheet" href="../static/styles/addproduct.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="custom.css"> -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/addproduct.css') }}"> -->
+
+</head>
+
+
+<body class="background">
+    <script type="text/javascript" src="{{ url_for('static',filename='javascript/jquery.js') }}"></script>
+    <div class="upper-bar">
+        <div>
+            <a href="home" ><img src="{{ url_for('static',filename='images/home.png') }}" class="icon" alt="Home"></a>
+            <!-- <a href="home" ><img src="home.png" class="icon" alt="Home"></a> -->
+        </div>
+    </div> 
+    <div class="outer-box">
+        <div class="heading">
+            <h1 class="Page-Title">Add Product</h1>
+
+        </div>
+       <hr width="100%">
+        <div>
+            <button id="start-scanner">+</button>
+            <form method="get" action="Add" name="Add Product" id="productForm">
+
+                <table class="product-details">
+                        <tbody>
+                            <tr >
+                                <td>Product_Id : </td>
+                                <td><input  name="pid" class="input-value" id="add-product-id"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Product_Name : </td>
+                                <td><input name="name" class="input-value" id='add-product-name'></td>
+                            </tr>
+                            <tr>
+                                <td>Price_per_Unit : </td>
+                                <td><input name="price" class="input-value"></td>
+                            </tr>
+                            <tr>
+                                <td>Qty : </td>
+                                <td><input name="quantity" class="input-value"></td>
+                            </tr>
+                            <tr>
+                                <td>Unit : </td>
+                                <td>
+                                <select name="unit" class="unit-option">
+                                <option value=1>Kg</option>
+                                <option value=2>lit</option>
+                                <option value=3>Nos.</option>
+                                <option value=4>Other</option>
+                                </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br>
+
+
+            </form>
+            <a href="manage_products"><button class="blue-button-center btn" id="save-product">Add Product</button></a><br>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static',filename='javascript/add_product.js') }}"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Items</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+     <!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/orderitem.css') }}"> -->
+     <link rel="stylesheet" href="../static/styles/orderitem.css">
+</head>
+<body class="background">
+    <script type="text/javascript" src="{{ url_for('static',filename='javascript/jquery.js') }}"></script>
+    <div class="upper-bar">
+        <div>
+            <a href="home" ><img src="{{ url_for('static',filename='images/home.png') }}" class="icon" alt="Home"></a>
+        </div>
+    </div>
+    
+    {% for item in data %}
+        
+           <div>
+               Order Id: {{item[0][0]}}
+               <br>
+               Order Date: {{item[0][1]}}
+               <br>
+               Customer Mobile No: {{item[0][2]}}
+               <br>
+               Total Amount:{{item[0][3]}} Rs.
+               <br>
+               Payment Method:{{item[0][4]}}
+            </div> 
+            
+       
+    {% endfor %}
+
+    <table class="product-details">
+        
+            <tr class="header" height=40px>
+                <td>Items Name</td>
+                <td> Unit</td>
+                <td>Price per Each</td>
+                <td>Qty</td>
+                <td>Price</td>
+            </tr>
+       
+        
+            {% for product in data[0][1] %}
+                <tr class="table-content">
+                    <td>{{product[1]}}</td>
+                    <td>{{product[2]}}</td>
+                    <td>{{product[3]}}</td>
+                    <td>{{product[4]}}</td>    
+                    <td>{{product[5]}}</td>
+
+                </tr>
+            {% endfor %}
+        
+    </table>
+  
+</body>
+</html>
